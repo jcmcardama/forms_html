@@ -3,10 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forms Example</title>
+    <title>Login Form</title>
     <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
-    <h1>Login</h1>
+    <div class="login_form">
+        <form>
+            <h3>Login with</h3>
+            <div class="input_container">
+                <label class="input_label" for="email">Email</label>
+                <input class="input_field" type="email" id="email" placeholder="Enter email address" required>
+            </div>
+            <div class="input_container">
+                <div class="password_label">
+                    <label class="input_label" for="password">Password</label>
+                    <a class="password_forgot" href="#">Forgot Password</a>
+                </div>
+                <input class="input_field" type="password" id="password" placeholder="Enter Password" required>
+            </div>
+            <button class="submit_button">Login</button>
+            <p class="sign_up">
+                Don't have an account?  <a class="password_forgot" href="#">Sign up</a>
+            </p>
+        </form>
+    </div>
 </body>
 </html>
